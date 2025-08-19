@@ -10,7 +10,8 @@ public class Main {
             1. Добавить публикацию.
             2. Показать все публикации.
             3. Поиск публикаций по автору.
-            4. Удалить публикацию по названию.
+            4. Вывести общее количество публикаций.
+            5. Удалить публикацию по названию.
             0. Завершение работы программы.
             ================================================================
             Укажите цифру пункта меню:
@@ -103,6 +104,14 @@ public class Main {
                     }
 
                     case 4 -> {
+                        if (Publication.getPublicationCount() == 0) {
+                            System.out.println("Список публикаций пуст!");
+                        } else {
+                            System.out.println("Всего публикаций: " + Publication.getPublicationCount());
+                        }
+                    }
+
+                    case 5 -> {
                         System.out.println("Введите название публикации, которую хотите удалить:");
                         String title = scanner.nextLine();
                         library.deletePublicationByTitle(title);
