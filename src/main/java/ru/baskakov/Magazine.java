@@ -20,10 +20,10 @@ public class Magazine extends Publication{
     public void printDetails() {
         System.out.printf("""
                 Тип публикации: %s,
-                Назавание публикации: %s,
-                Автор публикации: %s,
-                Год написания публикации: %d,
-                Номер выпуска: %d
+                ---Назавание публикации: %s,
+                ---Автор публикации: %s,
+                ---Год написания публикации: %d,
+                ---Номер выпуска: %d
                 """, getType(), getTitle(), getAuthor(), getYear(), issueNumber);
     }
 

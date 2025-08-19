@@ -19,10 +19,10 @@ public class Newspaper extends Publication{
     public void printDetails() {
         System.out.printf("""
                 Тип публикации: %s,
-                Назавание публикации: %s,
-                Автор публикации: %s,
-                Год написания публикации: %d,
-                День недели публикации:: %d
+                ---Назавание публикации: %s,
+                ---Автор публикации: %s,
+                ---Год написания публикации: %d,
+                ---День недели публикации:: %s
                 """, getType(), getTitle(), getAuthor(), getYear(), publicationDay);
     }
 
