@@ -2,7 +2,7 @@ package ru.baskakov;
 
 import java.util.Objects;
 
-public abstract class Publication {
+public abstract class Publication implements Printable {
     public static int publicationCount = 0;
 
     private String title;
@@ -22,7 +22,7 @@ public abstract class Publication {
         return "Публикация: " +
                 "---Название: " + title + '\'' +
                 "---Автор: " + author + '\'' +
-                "---Год выпуска: " + year;
+                "---Год выпуска: " + year + '\'';
     }
 
     @Override
