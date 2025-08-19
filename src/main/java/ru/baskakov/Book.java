@@ -20,16 +20,17 @@ public class Book extends Publication {
     public void printDetails() {
         System.out.printf("""
                 Тип публикации: %s,
-                Назавание публикации: %s,
-                Автор публикации: %s,
-                Год написания публикации: %d,
-                ISBN: %s
+                ---Назавание публикации: %s,
+                ---Автор публикации: %s,
+                ---Год написания публикации: %d,
+                ---ISBN: %s
                 """, getType(),getTitle(), getAuthor(), getYear(), ISBN);
     }
 
     @Override
     public String toString() {
-        return "Book: " +
+        return super.toString() + "\n" +
+                "Book: " +
                 "--- ISBN:=" + ISBN;
     }
 
